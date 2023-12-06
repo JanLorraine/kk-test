@@ -1,0 +1,181 @@
+.home{
+    // padding: 30px 15px 50px 15px;
+    &__wrapper{
+        padding: 30px 15px 50px 15px;
+    }
+    &__feature{
+        &__header{
+            text-align: center;
+            font-family: "Fredoka", Sans-serif;
+            letter-spacing: 1px;
+            h1{
+                color: #ff7223;
+                font-size: 20px;
+                // font-weight: 600;
+            }
+            h2{
+                color: #483290;
+                // font-weight: 600;
+                font-size: 28px;
+            }
+        }
+    }
+    .feature{
+        &__wrapper{
+            margin-top: 10px;
+            max-width: 700px;
+        }
+        
+        &__item{
+            padding-top: 20px;
+            display: flex;
+            &:nth-child(2){
+                justify-content: center;
+            }
+            &:nth-child(3){
+                justify-content: end;
+            }
+            &:nth-child(4){
+                justify-content: start;
+            }
+            &:nth-child(5){
+                justify-content: center;
+            }
+            &:nth-child(6){
+                justify-content: end;
+            }
+            &__content{
+                max-width: 24rem;
+                text-align: center;
+            }
+            &__img{
+                svg{
+                    width: 5rem;
+                    height: 5rem;
+                    // position: relative;
+                    // display: block;
+                }
+            }
+            &__text{
+                h3{
+                    letter-spacing: 0.6px;
+                    font-family: "Fredoka", Sans-serif;
+                    color: #0e9aff;
+                    font-size: 23px;
+                    margin: 10px 0px;
+                    // font-weight: 600;
+
+                }
+                p{
+                    color: #7f70b1;
+                    font-family: "Open Sans", Sans-serif;
+                    font-size: 18px;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:767px){
+    &__wrapper{
+            max-width: 1000px;
+            padding: 50px 10px 90px 10px;
+    }
+    &__feature{
+        &__header{
+            h1{
+                font-size: 22px;
+            }
+            h2{
+                font-size: 35px;
+            }
+        }
+    }
+
+    .feature{
+        &__wrapper{
+            margin-top: 30px;
+
+            max-width: unset;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: flex-start;
+
+        }
+        &__item{
+            padding-top: 0px;
+            display: flex;
+            &:nth-child(2){
+                justify-content: unset;
+            }
+            &:nth-child(3){
+                justify-content: unset;
+            }
+            &:nth-child(4){
+                margin-top: 30px;
+                justify-content: unset;
+            }
+            &:nth-child(5){
+                margin-top: 30px;
+                justify-content: unset;
+            }
+            &:nth-child(6){
+                margin-top: 30px;
+                justify-content: unset;
+            }
+            &__content{
+                padding: 0px 10px 0px 10px;
+            }
+            &__text{
+                h3{
+                    font-size: 24px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    }
+    @media screen and (min-width:1025px){
+        &__wrapper{
+            max-width: 2000px;
+    }
+    &__feature{
+        &__header{
+            h1{
+                font-size: 30px;
+            }
+            h2{
+                font-size: 64px;
+            }
+        }
+    }
+    .feature{
+        &__wrapper{
+        }
+        &__item{
+            &__content{
+                padding: 20px 27px 0px 27px;            }
+            &__img{
+                svg{
+                    width: unset;
+                    height: unset;
+                    // position: relative;
+                    // display: block;
+                }
+            }
+            &__text{
+                h3{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    
+    }
+
+}
